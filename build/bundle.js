@@ -86,15 +86,63 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./source/js/components/slider.js":
+/*!****************************************!*\
+  !*** ./source/js/components/slider.js ***!
+  \****************************************/
+/*! exports provided: slider */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "slider", function() { return slider; });
+var slider = function slider() {
+  var slideList = document.querySelector(".slider-section__slides");
+  var slides = slideList.querySelectorAll(".slider-section__slide");
+  var mainSlide = document.querySelector(".slider-section__main-image");
+  var nextButton = document.getElementById("next");
+  var currentSlide = 0;
+
+  var nextSlide = function nextSlide() {
+    goToSlide(currentSlide + 1);
+  };
+
+  var goToSlide = function goToSlide(n) {
+    slides[currentSlide].className = "slider-section__slide";
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].className = "slider-section__slide slider-section__slide--showing";
+    mainSlide.src = slides[currentSlide].querySelector(".slider-section__image").src;
+    mainSlide.srcset = slides[currentSlide].querySelector(".slider-section__image").srcset;
+  };
+
+  nextButton.addEventListener("click", function () {
+    nextSlide();
+  });
+  slideList.addEventListener("click", function (evt) {
+    if (evt.target.tagName === "IMG") {
+      slides[currentSlide].className = "slider-section__slide";
+      currentSlide = evt.target.dataset.slide;
+      slides[currentSlide].className = "slider-section__slide slider-section__slide--showing";
+      mainSlide.src = evt.target.src;
+      mainSlide.srcset = evt.target.srcset;
+    }
+  });
+};
+
+/***/ }),
+
 /***/ "./source/js/index.js":
 /*!****************************!*\
   !*** ./source/js/index.js ***!
   \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log(`meow2`);
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider.js */ "./source/js/components/slider.js");
 
+Object(_components_slider_js__WEBPACK_IMPORTED_MODULE_0__["slider"])();
 
 /***/ })
 

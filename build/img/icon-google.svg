@@ -1,0 +1,14 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 33 33">
+  <defs>
+    <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #f4232f; filter: url(#filter)">
+    <circle id="Эллипс_5_копия_2" data-name="Эллипс 5 копия 2" class="cls-1" cx="16.531" cy="16.5" r="13" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Эллипс_5_копия_2"/>
+  <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" x="12" y="12" width="13" height="11" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAWCAYAAADeiIy1AAACGElEQVRIia3VS4iPURgG8J/BYIFxCbnkTikUymWQFKVYuGyk2NhQIhZICgsWCllQosRGWKBEFDEb0biFKCxkKGrIQhbj0tH75ev75m/mPzybc877vuc85z3nPc/p1NjYqICZWI969C06A0exAz9KHk7gKQ7kjTW5fmccwRVcxmysxgf0RjfsxHRsr0CS0A+9isY80UGswxacwTtciszeoDv24FNp6XYgIxqDDdE/V5j2EZujX4dVHSHqEu2CaNNxfClFcRGfg2hKwXeoMJ6IQRGb4V6WUddo03hYiYYWPCtZq0CW0aPclOWt7FIUQ0JDwb6pMB6Bh9iVN2YZNYRTVNSAwuT+mIQnOFXaQjuQEaW7WRmVlkiuYmz4euAYXmARvv0LUcJzTMb+KOW7caRNmBDv6m1phTLeo7lobU0Z8ptojsd6GBtLER3MqIha9Azb6txR/neidBcno18XBVNfiuoAUeovxdm4r9sYjZfhH4gbWFFapQqiUbgTGvcAMzAX8+LIFoe41kZ5Dymt1AZq4o3cwjQswb6QmzySmk/F6yj3qrNKRFsxNL6Ha6WIP0ilvS1G40veNpCI5kdI099Df+NVtC0lTxtIRF8jZGFOXCshU+6bFfwVURPykjA8fthKZCOxO+7zQrVESb1Pow/2Yi1m4Tge4zsGY0482utYg5/VEuUlKJEtC00bF9KTxDaV9X2cD/2rHvgFqbRlAtzALYAAAAAASUVORK5CYII="/>
+</svg>

@@ -1,0 +1,371 @@
+@charset "UTF-8";
+/*         Загружаемые модули         */
+/*         Основные размеры        */
+/*         Основные цвета        */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: auto;
+  padding: 0;
+  font-family: "Circe", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  overflow-x: hidden;
+  background-color: #ffffff; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+/* "Circe" font-family */
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Circe"), url("../fonts/circe/circe_300.eot") format("embedded-opentype"), url("../fonts/circe/circe_300.woff2") format("woff2"), url("../fonts/circe/circe_300.woff") format("woff"), url("../fonts/circe/circe_300.svg") format("svg"); }
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Circe"), url("../fonts/circe/circe_600.eot") format("embedded-opentype"), url("../fonts/circe/circe_600.woff2") format("woff2"), url("../fonts/circe/circe_600.woff") format("woff"), url("../fonts/circe/circe_600.svg") format("svg"); }
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Circe"), url("../fonts/circe/circe_700.eot") format("embedded-opentype"), url("../fonts/circe/circe_700.woff2") format("woff2"), url("../fonts/circe/circe_700.woff") format("woff"), url("../fonts/circe/circe_700.svg") format("svg"); }
+
+/* ----------------- Разметкdа под desktop ----------------- */
+.container {
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 125px; }
+
+/* ----------------- Разметкdа под big-tablet ----------------- */
+@media (max-width: 1439px) {
+  .container {
+    padding: 0 2.6%; } }
+
+/* ----------------- Разметкdа под tablet ----------------- */
+@media (max-width: 999px) {
+  .container {
+    padding: 0 27px; } }
+
+/* ----------------- Разметкdа под mobile ----------------- */
+@media (max-width: 767px) {
+  .container {
+    padding: 0 13px; } }
+
+.page-main {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 22px; }
+
+/* ----------------- Разметкdа под desktop ----------------- */
+.shirt-section {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding-top: 55px; }
+
+.shirt-section h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.04em; }
+
+.shirt-section__description {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 28px;
+  padding: 0;
+  max-width: 450px;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.008em; }
+
+.shirt-section__slider-section {
+  margin-right: 130px; }
+
+.shirt-section__navigation {
+  display: none; }
+
+.shirt-section__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+  list-style: none; }
+
+.shirt-section__additional-item {
+  margin-right: 31px; }
+  .shirt-section__additional-item:last-child {
+    margin-right: 0; }
+
+.shirt-section__additional-link {
+  font-size: 13px;
+  color: #4873b9; }
+
+.shirt-section__price-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
+  margin-bottom: 13px; }
+
+.shirt-section__price-container p {
+  padding: 0;
+  margin: 0; }
+
+.shirt-section__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold; }
+  .shirt-section__price--old {
+    margin-right: 12px;
+    color: #9a9b9b;
+    font-weight: 500;
+    text-decoration: line-through;
+    letter-spacing: 0.04em;
+    opacity: 0.7; }
+  .shirt-section__price--current {
+    margin-right: 35px;
+    font-weight: 600;
+    color: #9a9b9b;
+    letter-spacing: 0.04em; }
+  .shirt-section__price--promo {
+    margin-right: 2px;
+    letter-spacing: 0.08em; }
+
+.shirt-section__price-description {
+  font-size: 15px; }
+
+.shirt-section__advantages-container {
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 12px 20px;
+  background-color: #f4f4f4; }
+
+.shirt-section__advantages-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.shirt-section__advantages-item > p {
+  position: relative;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 30px;
+  font-size: 13px; }
+  .shirt-section__advantages-item > p::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40%;
+    display: block;
+    width: 14px;
+    height: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(-50%); }
+
+.shirt-section__advantages-item--availability > p::after {
+  background-image: url("../img/icon-check.svg"); }
+
+.shirt-section__advantages-item--delivery > p {
+  margin-bottom: 0; }
+  .shirt-section__advantages-item--delivery > p::after {
+    width: 17px;
+    height: 13px;
+    background-image: url("../img/icon-export.svg"); }
+
+.shirt-section__button-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 240px;
+  width: 50%;
+  height: 40px;
+  margin-right: 18px;
+  border: 2px solid #9a9b9b;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000; }
+
+.shirt-section__social-container {
+  display: flex;
+  align-items: center; }
+
+.shirt-section__social-message {
+  margin-right: 18px; }
+
+.shirt-section__social-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.shirt-section__social-item {
+  margin-right: 5px; }
+  .shirt-section__social-item:last-child {
+    margin-right: 0;
+    margin-left: 10px; }
+
+.shirt-section__social-count {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+  background-color: #f4f4f4; }
+  .shirt-section__social-count:after {
+    content: "";
+    position: absolute;
+    left: -30%;
+    border: 6px solid transparent;
+    border-right: 6px solid #f4f4f4; }
+
+.shirt-section__social-img {
+  width: 35px;
+  height: 35px;
+  fill: transparent;
+  stroke: #d9d9d9;
+  transition: 0.25s ease all; }
+  .shirt-section__social-img:hover, .shirt-section__social-img:focus {
+    fill: #00b2ff;
+    stroke: #00b2ff; }
+  .shirt-section__social-img:active {
+    fill: #006be5;
+    stroke: #006be5; }
+
+/* ----------------- Разметкdа под big-tablet ----------------- */
+@media (max-width: 1439px) {
+  .shirt-section__button-link {
+    width: 165px; } }
+
+/* ----------------- Разметкdа под tablet ----------------- */
+@media (max-width: 999px) {
+  .shirt-section {
+    flex-grow: 0;
+    padding-top: 0; }
+  .shirt-section__navigation {
+    display: flex;
+    flex-wrap: wrap; }
+  .shirt-section__navigation-link {
+    position: relative;
+    padding-right: 30px;
+    font-size: 13px;
+    color: #797979; }
+    .shirt-section__navigation-link::after {
+      content: "";
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      display: block;
+      width: 15px;
+      height: 10px;
+      background-image: url("../img/arrow.png");
+      transform: translateY(-50%); }
+  .shirt-section__button-link {
+    width: 140px;
+    margin-right: 0; }
+    .shirt-section__button-link--shop {
+      margin-right: 8px; }
+  .shirt-section__social-message {
+    display: none; } }
+
+/* ----------------- Разметкdа под desktop ----------------- */
+.slider-section {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  padding-right: 8.9%; }
+
+.slider-section__slides {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 110px;
+  padding: 0;
+  list-style: none; }
+
+.slider-section__slide {
+  padding: 2px;
+  margin-bottom: 20px;
+  cursor: pointer; }
+  .slider-section__slide:last-child {
+    margin-bottom: 0; }
+  .slider-section__slide--showing {
+    padding: 0;
+    border: 2px solid #4873b9; }
+
+.shirt-section__main-image {
+  display: block; }
+
+.slider-section__buttons {
+  position: absolute;
+  bottom: 0;
+  left: 4.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.slider-section__controls {
+  width: 30px;
+  height: 40px;
+  transform: rotate(90deg); }
+
+/* ----------------- Разметкdа под big-tablet ----------------- */
+@media (max-width: 1439px) {
+  .slider-section {
+    padding-right: 5.5vw; }
+  .slider-section__slides {
+    margin-right: 3vw; } }
+
+/* ----------------- Разметкdа под tablet ----------------- */
+@media (max-width: 999px) {
+  .slider-section {
+    width: 59%;
+    padding-right: 43px; }
+  .slider-section__slides {
+    margin-right: 5px; } }

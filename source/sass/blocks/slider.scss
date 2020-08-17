@@ -1,0 +1,90 @@
+/* ----------------- Разметкdа под desktop ----------------- */
+
+.slider-section {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+  padding-right: 5.5%;
+}
+
+.slider-section__slides {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 110px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.slider-section__slide {
+  padding: 2px;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--showing {
+    padding: 0;
+    border: 2px solid $offer-color;
+  }
+}
+
+.shirt-section__main-image {
+  display: block;
+}
+
+.slider-section__buttons {
+  position: absolute;
+  bottom: -20px;
+  left: 5%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.slider-section__controls {
+  width: 30px;
+  height: 40px;
+
+  transform: rotate(90deg);
+}
+
+/* ----------------- Разметкdа под big-tablet ----------------- */
+
+@media (max-width: $desktop-width) {
+  .slider-section {
+    padding-right: 5.5vw;
+  }
+
+  .slider-section__buttons {
+    left: 5.5%;
+  }
+
+  .slider-section__slides {
+    margin-right: 3vw;
+  }
+}
+
+/* ----------------- Разметкdа под tablet ----------------- */
+
+@media (max-width: $big-tablet-width) {
+  .slider-section {
+    width: 59%;
+    padding-right: 43px;
+  }
+
+  .slider-section__slides {
+    margin-right: 5px;
+  }
+
+  .slider-section__buttons {
+    position: absolute;
+    left: 6.5%;
+  }
+}

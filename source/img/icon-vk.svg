@@ -1,0 +1,14 @@
+<svg id="Группа_2" data-name="Группа 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 33 33">
+  <defs>
+    <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #08587e; filter: url(#filter)">
+    <circle id="Эллипс_5" data-name="Эллипс 5" class="cls-1" cx="16.344" cy="16.5" r="13" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Эллипс_5"/>
+  <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" x="13" y="12" width="7" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAABC0lEQVQ4jZXTzyoFURwH8M+VlJQFkpCNkmRh5QXYkXiCm+wUL8FSFrKTsmBhxxtQ2A1WykrdsqEsJKxcDTN1mjtzm/kuTud8v/Pt93dqURQ1tUesP+IEO/iOv+5oa/lHDZPYwiW6yxpDzGKjyHiHc1zgo0VlMT46W2j2cJTcR/CA3kAfKIoY4hlRhnsrY0yjhrgtSnUMM+jBKiYC7R278aXMHFM0sJJGrDKOIaxjsKqxC2u4QX9ejYfJDJtJY+qYCvRxbOcZr3AcvPeTXR0NuKUyqX7iOsMNl62xL/P+KWNcwFyGa+TVuInlpItxI8IFSHFWZQFSvGC66v/4hHm85qWaxRfucYqDvy7jFzcjNCQefx1TAAAAAElFTkSuQmCC"/>
+</svg>

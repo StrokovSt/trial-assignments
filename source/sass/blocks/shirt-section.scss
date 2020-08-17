@@ -1,0 +1,345 @@
+/* ----------------- Разметкdа под desktop ----------------- */
+
+.shirt-section {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+  padding-top: 55px;
+}
+
+.shirt-section h2 {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  text-transform: uppercase;
+
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.shirt-section__description {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 28px;
+  padding: 0;
+  max-width: 450px;
+
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.008em;
+}
+
+.shirt-section__slider-section {
+  margin-right: 130px;
+}
+
+.shirt-section__navigation {
+  display: none;
+}
+
+.shirt-section__additional-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.shirt-section__additional-item {
+  margin-right: 31px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.shirt-section__additional-link {
+  font-size: 13px;
+  color: $offer-color;
+  letter-spacing: 0.005em;
+}
+
+.shirt-section__price-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 340px;
+  margin-bottom: 13px;
+}
+
+.shirt-section__price-container p {
+  padding: 0;
+  margin: 0;
+}
+
+.shirt-section__price {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  &--old {
+    margin-right: 12px;
+
+    color: $price-color;
+    font-weight: 500;
+    text-decoration: line-through;
+    letter-spacing: 0.04em;
+    opacity: 0.7;
+  }
+
+  &--current {
+    margin-right: 35px;
+
+    font-weight: 600;
+    color: $price-color;
+    letter-spacing: 0.04em;
+  }
+
+  &--promo {
+    margin-right: 2px;
+
+    letter-spacing: 0.08em;
+  }
+}
+
+.shirt-section__price-description {
+  font-size: 15px;
+}
+
+.shirt-section__advantages-container {
+  max-width: 340px;
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 12px 20px;
+  background-color: $context-color;
+}
+
+.shirt-section__advantages-list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.shirt-section__advantages-item > p {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0;
+  padding-left: 30px;
+
+  font-size: 13px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 40%;
+
+    display: block;
+    width: 14px;
+    height: 10px;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: translateY(-50%);
+  }
+}
+
+.shirt-section__advantages-item {
+  &--availability > p {
+    &::after {
+      background-image: url("../img/icon-check.svg");
+    }
+  }
+
+  &--delivery > p {
+    margin-bottom: 0;
+
+    &::after {
+      width: 17px;
+      height: 13px;
+
+      background-image: url("../img/icon-export.svg");
+    }
+  }
+}
+
+.shirt-section__button-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 40px;
+
+  border: 2px solid $price-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000000;
+
+  &--shop {
+    margin-right: 18px;
+  }
+}
+
+.shirt-section__social-container {
+  display: flex;
+  align-items: center;
+}
+
+.shirt-section__social-message {
+  margin-right: 18px;
+}
+
+.shirt-section__social-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.shirt-section__social-item {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+.shirt-section__social-count {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 30px;
+
+  background-color: $context-color;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    left: -30%;
+
+    border: 6px solid transparent;
+    border-right: 6px solid $context-color;
+  }
+}
+
+.shirt-section__social-img {
+  width: 35px;
+  height: 35px;
+
+  fill: transparent;
+  stroke: #d9d9d9;
+
+  transition: 0.25s ease all;
+
+  &:hover,
+  &:focus {
+    fill: #00b2ff;
+    stroke: #00b2ff;
+  }
+
+  &:active {
+    fill: $button-color;
+    stroke: $button-color;
+  }
+}
+
+  /* ----------------- Разметкdа под big-tablet ----------------- */
+
+  @media (max-width: $desktop-width) {
+    .shirt-section__button-link {
+      width: 165px;
+    }
+  }
+
+  /* ----------------- Разметкdа под tablet ----------------- */
+
+  @media (max-width: $big-tablet-width) {
+    .shirt-section {
+      padding-top: 0;
+    }
+
+    .shirt-section__navigation {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .shirt-section__navigation-link {
+      position: relative;
+      padding-right: 37px;
+
+      font-size: 13px;
+      color: #797979;
+
+      &::after {
+        content: "";
+
+        position: absolute;
+        right: 8px;
+        top: 50%;
+
+        display: block;
+        width: 15px;
+        height: 13px;
+        background-image: url("../img/arrow.png");
+        background-repeat: no-repeat;
+        background-position: center;
+
+        transform: translateY(-50%);
+      }
+
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .shirt-section__additional-list {
+      margin-bottom: 19px;
+    }
+
+    .shirt-section__price-container {
+      margin-bottom: 24px;
+    }
+
+    .shirt-section__advantages-container {
+      margin-bottom: 30px;
+      padding: 12px 23px;
+    }
+
+    .shirt-section__button-link {
+      width: 140px;
+      margin-right: 0;
+
+      &--shop {
+        margin-right: 8px;
+      }
+    }
+
+    .shirt-section__description {
+      margin-top: 23px;
+      margin-bottom: 10px;
+      max-width: 280px;
+    }
+
+    .shirt-section__social-message {
+      display: none;
+    }
+  }

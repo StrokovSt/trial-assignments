@@ -1,1 +1,2 @@
-console.log(`meow2`);
+import {slider} from "./components/slider.js";
+slider();

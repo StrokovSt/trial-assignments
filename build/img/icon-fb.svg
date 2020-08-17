@@ -1,0 +1,14 @@
+<svg id="Группа_3" data-name="Группа 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66" viewBox="0 0 33 33">
+  <defs>
+    <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g style="fill: #155b9c; filter: url(#filter)">
+    <circle id="Эллипс_5_копия_3" data-name="Эллипс 5 копия 3" class="cls-1" cx="16.031" cy="16.5" r="13" style="stroke: inherit; filter: none; fill: inherit"/>
+  </g>
+  <use xlink:href="#Эллипс_5_копия_3"/>
+  <image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" x="14" y="11" width="5" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAYCAYAAADDLGwtAAAArUlEQVQoke2RIQpCURBFj99XFExi0aBbcAkGN/K7zW0YBNfgDow2jQ/E+gVtCj8oqPGDPBjh8kR40eBNd2YOM3Cn5r1HNADmwBhoABVwAfZOoA6wAXrSq1tdZdKcRJDqoODoYwxn4AkUerodQVNgZr6lG5sRuBZ/z0iUs0gwr+oCN6sfYXj8snMlfpF6+poMOntZUB5ikOESKM1v9dcnoC/gENi9i+R4/uBPgsALgWEdgZZBmAIAAAAASUVORK5CYII="/>
+</svg>
