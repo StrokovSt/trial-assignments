@@ -18,11 +18,6 @@
       <feBlend result="blend" in2="SourceGraphic"></feBlend>
     </filter>
   
-    <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
-      <feFlood result="flood" flood-color="#fff"></feFlood>
-      <feComposite result="composite" operator="in" in2="SourceGraphic"></feComposite>
-      <feBlend result="blend" in2="SourceGraphic"></feBlend>
-    </filter>
   
     <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
       <feFlood result="flood" flood-color="#fff"></feFlood>
@@ -35,7 +30,17 @@
       <feComposite result="composite" operator="in" in2="SourceGraphic"></feComposite>
       <feBlend result="blend" in2="SourceGraphic"></feBlend>
     </filter>
-  </defs><symbol id="icon-check" viewBox="0 0 14 10">
+  
+    <filter id="filter" x="-1" y="-1" width="35" height="35" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"></feFlood>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"></feComposite>
+      <feBlend result="blend" in2="SourceGraphic"></feBlend>
+    </filter>
+  </defs><symbol id="icon-arrow" viewBox="0 0 11 7">
+  <image id="arrow_down" data-name="arrow down" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAbklEQVQYlW2NMQ7DMAwDjxnsFhn6/5fW9sKCiV20QW4RRBwl1f1loEoMDMZIwkkngoLoG3iAOwnuKYZuM7ZcBQ2bu0IRRz7iRQ41gf8/HKKnmGDJs6AGSuHBKbYlXuXwBJrNO3PuX67yKvzOE+ADh9coHZYcOuUAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-button-arrow" viewBox="0 0 11 7">
+  <image id="Layer_91_copy" data-name="Layer 91 copy" width="11" height="7" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAYAAADebrddAAAAgUlEQVQYlWWPQQoDMQwDR6FsGgr9/0+72YsW1aEE6ouJMrJs9dfboC5x2fyVBJjDMBtwgSdwBMzf3qMHDNcytQwR/DWkVkjeM6mC3mqCur0MqoSAEpPoJgNplefsFuFcCc+12mkKNKbZAUU6MGzH8AGlj213HjmlwJ884i3jdiziBvr0NyEAWVauAAAAAElFTkSuQmCC"></image>
+</symbol><symbol id="icon-check" viewBox="0 0 14 10">
   <image width="14" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAUCAYAAACeXl35AAABo0lEQVRIibXVPWsUURTG8V+yCcgqRF0UBPEFEsWXQivBRlsxdoJoIX4Aa7+OaKEg2AXzKezU+AaKIha+WyiiUTlybhiGHXcv7D7V7Dl37/P8Z86dmRkMBqakzTiFqziJHr7PTclsHvtxBPuwkPUt0zJcxGWcwVKzMWnDIDuYRss4lPWfeILXkzZski026s9xEw/D8DRms/EOjzNRjUaRrWIFz8LwGjbhD+7jOtYmTLaa17/mclHRrqTsZbJRpOOSbQC0n+FSJt0xJum4ZBvq9fv9E/iBbZl4J7bjG77iE34PITuMs7iQ562XZBHyHu7gUfu/YRgbvsXeJAttxe58W7zC+5Zh3MYrOI8DaRZ6ihu4GwMyJOg/wxf4kJsvdJBG/yNm0uxcLVnTMBpf8CY3H0YqSeP3RVyqJSsqQxMJH2A9zdaTJEiPZpDPuXY5a/43jV0KwmarizRu8x4cz9GfryVrExZ1kUaqY611VWRFbcJRpEXVZF2EXaSzOSTSbKWWrKiLsKiQhuIZxuDcxq1asqJRn6cgjXMa5+pl1uI6arVfFPAXQbuH0skm7c8AAAAASUVORK5CYII="></image>
 </symbol><symbol id="icon-export" viewBox="0 0 17 13">
   <image width="17" height="13" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAACUElEQVRIib2Wy2oUQRSGv8nMJDKKOo4RUSFBEHQhBBTBhSAuA67EVYLgA+ibuMobiC505UIQNyJmIxJRcKEo3kAS8YKJRMg4mSSc+LfUVHVPV3dGf2i6OXXq73OrU6fSarXeAbsph1ngGvCo5P6/qAEHgJFgJQ6jW9jbgyGgHkiLOTIUSEsSLQHNYCUOP4AVYCcwpgj1g+l/0DswZCswIzrAQeACcCaH6xlw818YYkZ0VewngXOBRi+2AfcD6YDyuy6eGKdMpxJIB2BIRc8q8CtYDbGoJ8BAKr4AKlmRM+GuQBqP7eLoKEV52AucVq246BjJ75SFWFhK1rLynoJxYAqY9JaWzZDbwI5wTxQeA9+AfcBwxIZmRs9qmyEzQNUR5nnnpsD6wYL6SNmoGuo1j7guwtSCUiqSJjZILNkPrzqpqcqYrNO05jQxlJo7kq0E2gVghlzy1G0smBfxqmQ1Rcpu6sOO7h4Z0/VqxPa9yuE56kS+6afgM3ALeOJ5nkTqFHAZ2O/tW/fS9Qa4HsFzLIm0GXLPKbSnwA3grY5aUuHJrflaRCckn9WpSfY2nO+7iu64M3h9F88X3dQLkrdtQjvr1MRXhfQQMA1MSP5cBn5SSEcd/Y/6HvPkRXg2I/KQEKZ0ETiulSPAHPAeeBFo/0GaPJon63T8d1QbjUbaP7uqaKuNl8ADPak3Zx9E81iNpNGMZBRrO9Dsj2geM+R8ygDtN668RpeFWJ7N2/eKht+ehYxGVHTij+X5aQs2I/gziXliXtjbYB6YN2Uiks8DwxuVVJW6p/GEywAAAABJRU5ErkJggg=="></image>
@@ -46,6 +51,9 @@
   </g>
   <use xlink:href="#&#x42D;&#x43B;&#x43B;&#x438;&#x43F;&#x441;_5_&#x43A;&#x43E;&#x43F;&#x438;&#x44F;_3"></use>
   <image id="&#x412;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x43D;&#x44B;&#x439;_&#x441;&#x43C;&#x430;&#x440;&#x442;-&#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;" data-name="&#x412;&#x435;&#x43A;&#x442;&#x43E;&#x440;&#x43D;&#x44B;&#x439; &#x441;&#x43C;&#x430;&#x440;&#x442;-&#x43E;&#x431;&#x44A;&#x435;&#x43A;&#x442;" x="14" y="11" width="5" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAYCAYAAADDLGwtAAAArUlEQVQoke2RIQpCURBFj99XFExi0aBbcAkGN/K7zW0YBNfgDow2jQ/E+gVtCj8oqPGDPBjh8kR40eBNd2YOM3Cn5r1HNADmwBhoABVwAfZOoA6wAXrSq1tdZdKcRJDqoODoYwxn4AkUerodQVNgZr6lG5sRuBZ/z0iUs0gwr+oCN6sfYXj8snMlfpF6+poMOntZUB5ikOESKM1v9dcnoC/gENi9i+R4/uBPgsALgWEdgZZBmAIAAAAASUVORK5CYII="></image>
+</symbol><symbol id="icon-form" viewBox="0 0 18 24">
+  
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M299.129,849.355h-3.747a0.926,0.926,0,0,0,0,1.85h2.847V862.15H283.771V851.205h3.142a0.926,0.926,0,0,0,0-1.85h-4.042a0.939,0.939,0,0,0-.871.971v12.826a0.832,0.832,0,0,0,.871.848h16.258a0.832,0.832,0,0,0,.871-0.848V850.326A0.939,0.939,0,0,0,299.129,849.355Zm-8.277,6.937a0.909,0.909,0,0,0,.886-0.925V842.834l3.777,3.515a0.867,0.867,0,0,0,.59.231,0.88,0.88,0,0,0,.664-0.308,0.957,0.957,0,0,0-.074-1.31l-5.09-4.733a0.861,0.861,0,0,0-1.136-.03,0.908,0.908,0,0,0-.384.37l-4.411,4.424a0.956,0.956,0,0,0-.03,1.31,0.86,0.86,0,0,0,1.254.031l3.069-3.083v12.116A0.909,0.909,0,0,0,290.852,856.292Z" transform="translate(-282 -840)"></path>
 </symbol><symbol id="icon-google" viewBox="0 0 33 33">
   
   <g style="fill: #f4232f; filter: url(#filter)">
@@ -73,7 +81,7 @@
   <main class="page-main container">
     <h1 class="visually-hidden">Trial assigments</h1>
 
-    <section class="page-main-section slider-section">
+    <section class="page-main-section slider-section" id="slider-section">
       <ul class="slider-section__slides">
         <li class="slider-section__slide slider-section__slide--showing">
           <img class="slider-section__image" data-slide="0" src="img/small-shirt-1.png" srcset="img/small-shirt-1@x2.png 2x">
@@ -86,7 +94,7 @@
         </li>
       </ul>
       <div class="slider-section__buttons">
-        <button class="slider-section__controls" id="next">&gt;</button>
+        <button class="slider-section__controls" id="next"></button>
       </div>
       <picture>
         <img class="slider-section__main-image" src="img/shirt-1.png" srcset="img/shirt-1@x2.png 2x" width="340" height="492" alt="Рубашка">
@@ -96,10 +104,20 @@
     <section class="page-main__shirt-section shirt-section">
       <div class="shirt-section__main-container">
         <nav class="shirt-section__navigation">
-          <a class="shirt-section__navigation-link" href="#">Каталог</a>
-          <a class="shirt-section__navigation-link" href="#">Женщинам</a>
-          <a class="shirt-section__navigation-link" href="#">Одежда</a>
-          <a class="shirt-section__navigation-link" href="#">Рубашки</a>
+          <ul class="shirt-section__navigation-list">
+            <li class="shirt-section__navigation-item">
+              <a class="shirt-section__navigation-link" href="#">Каталог</a>
+            </li>
+            <li class="shirt-section__navigation-item">
+              <a class="shirt-section__navigation-link" href="#">Женщинам</a>
+            </li>
+            <li class="shirt-section__navigation-item">
+              <a class="shirt-section__navigation-link" href="#">Одежда</a>
+            </li>
+            <li class="shirt-section__navigation-item">
+              <a class="shirt-section__navigation-link" href="#">Рубашки</a>
+            </li>
+          </ul>
         </nav>
         <h2 class="shirt-section__heading">рубашка medicine</h2>
         <ul class="shirt-section__additional-list">
@@ -126,7 +144,7 @@
             <li class="shirt-section__advantages-item shirt-section__advantages-item--availability">
               <p class="shirt-section__advantages-description">
                 В наличии в магазине
-                <a class="shirt-section__advantages-link" href="#">Lamoda</a>
+                <a class="shirt-section__advantages-link link" href="#">Lamoda</a>
               </p>
             </li>
             <li class="shirt-section__advantages-item shirt-section__advantages-item--delivery">
@@ -136,39 +154,57 @@
             </li>
           </ul>
         </div>
-        <a class="shirt-section__button-link shirt-section__button-link--shop" href="#">В магазин</a>
-        <a class="shirt-section__button-link" href="#">В избранное</a>
+
+        <div class="shirt-section__buttons-container">
+          <a class="shirt-section__button-link shirt-section__button-link--shop" href="#">В магазин</a>
+          <a class="shirt-section__button-link shirt-section__button-link--favorite" href="#">В избранное</a>
+          <a class="shirt-section__ancor-link" href="#slider-section">
+            Наверх страницы
+            <svg class="shirt-section__ancor-img" width="40" height="40">
+              <use xlink:href="#icon-form"></use>
+            </svg>
+          </a>
+        </div>
+
         <p class="shirt-section__description">
           Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.
+        </p>
+        <p class="shirt-section__description">
           Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах;
           карман на груди.
         </p>
-        <div class="shirt-section__social-container">
+
+        <div class="shirt-section__social-container shirt-section__social-container--active">
+          <h3 class="shirt-section__social-heading">Подробнее</h3>
           <span class="shirt-section__social-message">ПОДЕЛИТЬСЯ:</span>
           <ul class="shirt-section__social-list">
             <li class="shirt-section__social-item">
               <a class="shirt-section__social-link" href="https://vk.com/">
+                Мы Вконтакте
                 <svg class="shirt-section__social-img" width="35" height="35">
                   <use xlink:href="#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="shirt-section__social-item">
-              <a class="shirt-section__social-link" href="https://vk.com/">
+              <a class="shirt-section__social-link" href="https://google.com/">
+                Мы в Google
                 <svg class="shirt-section__social-img" width="35" height="35">
                   <use xlink:href="#icon-google"></use>
                 </svg>
               </a>
             </li>
             <li class="shirt-section__social-item">
-              <a class="shirt-section__social-link" href="https://vk.com/">
+              <a class="shirt-section__social-link" href="https://fb.com/">
+                Мы в Facebook
                 <svg class="shirt-section__social-img" width="35" height="35">
                   <use xlink:href="#icon-fb"></use>
                 </svg>
               </a>
             </li>
             <li class="shirt-section__social-item">
-              <a class="shirt-section__social-link" href="https://vk.com/">
+              <a class="shirt-section__social-link" href="https://twitter.com/">
+                Мы в Twitter
                 <svg class="shirt-section__social-img" width="35" height="35">
                   <use xlink:href="#icon-tw"></use>
                 </svg>
@@ -179,6 +215,7 @@
             </li>
           </ul>
         </div>
+
       </div>
     </section>
   </main>

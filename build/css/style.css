@@ -91,7 +91,16 @@ img {
   position: relative;
   display: flex;
   justify-content: flex-start;
+  align-items: flex-start;
   padding-top: 22px; }
+
+/* ----------------- Разметкdа под mobile ----------------- */
+@media (max-width: 767px) {
+  .page-main {
+    padding-top: 0;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: hidden; } }
 
 /* ----------------- Разметкdа под desktop ----------------- */
 .shirt-section {
@@ -99,6 +108,11 @@ img {
   justify-content: center;
   flex-grow: 1;
   padding-top: 55px; }
+
+.shirt-section__main-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
 
 .shirt-section h2 {
   margin: 0;
@@ -111,13 +125,15 @@ img {
 
 .shirt-section__description {
   margin: 0;
-  margin-top: 40px;
-  margin-bottom: 28px;
   padding: 0;
   max-width: 450px;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: 0.008em; }
+  .shirt-section__description:first-of-type {
+    margin-top: 40px; }
+  .shirt-section__description:last-of-type {
+    margin-bottom: 28px; }
 
 .shirt-section__slider-section {
   margin-right: 130px; }
@@ -140,7 +156,8 @@ img {
 
 .shirt-section__additional-link {
   font-size: 13px;
-  color: #4873b9; }
+  color: #4873b9;
+  letter-spacing: 0.005em; }
 
 .shirt-section__price-container {
   display: flex;
@@ -221,18 +238,34 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  max-width: 240px;
-  width: 50%;
+  width: 240px;
   height: 40px;
-  margin-right: 18px;
   border: 2px solid #9a9b9b;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000000; }
+  color: #000000;
+  transition: 0.25s ease all; }
+  .shirt-section__button-link--shop {
+    margin-right: 18px; }
+  .shirt-section__button-link:focus, .shirt-section__button-link:hover {
+    color: #ffffff;
+    background-color: #006be5;
+    border-color: #006be5; }
+  .shirt-section__button-link:active {
+    background-color: #4873b9;
+    border-color: #4873b9;
+    opacity: 0.7; }
+
+.shirt-section__ancor-link {
+  display: none; }
 
 .shirt-section__social-container {
   display: flex;
   align-items: center; }
+
+.shirt-section__social-heading {
+  display: none;
+  width: 100%; }
 
 .shirt-section__social-message {
   margin-right: 18px; }
@@ -286,26 +319,49 @@ img {
 /* ----------------- Разметкdа под tablet ----------------- */
 @media (max-width: 999px) {
   .shirt-section {
-    flex-grow: 0;
     padding-top: 0; }
   .shirt-section__navigation {
+    display: block; }
+  .shirt-section__navigation-list {
     display: flex;
-    flex-wrap: wrap; }
-  .shirt-section__navigation-link {
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 22px;
+    padding: 0;
+    list-style: none; }
+  .shirt-section__navigation-item {
     position: relative;
-    padding-right: 30px;
-    font-size: 13px;
-    color: #797979; }
-    .shirt-section__navigation-link::after {
+    padding-right: 37px; }
+    .shirt-section__navigation-item::after {
       content: "";
       position: absolute;
-      right: 5px;
+      right: 8px;
       top: 50%;
       display: block;
       width: 15px;
-      height: 10px;
+      height: 13px;
       background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      background-position: center;
       transform: translateY(-50%); }
+    .shirt-section__navigation-item:last-child::after {
+      display: none; }
+  .shirt-section__navigation-link {
+    font-size: 13px;
+    color: #797979; }
+  .shirt-section__additional-list {
+    margin-bottom: 19px; }
+  .shirt-section__price-container {
+    margin-bottom: 22px; }
+  .shirt-section__advantages-container {
+    margin-bottom: 30px;
+    padding: 12px 23px; }
+  .shirt-section__description {
+    max-width: 290px; }
+    .shirt-section__description:first-of-type {
+      margin-top: 24px; }
+    .shirt-section__description:last-of-type {
+      margin-bottom: 10px; }
   .shirt-section__button-link {
     width: 140px;
     margin-right: 0; }
@@ -314,12 +370,136 @@ img {
   .shirt-section__social-message {
     display: none; } }
 
+/* ----------------- Разметкdа под mobile ----------------- */
+@media (max-width: 767px) {
+  .shirt-section {
+    width: 100%; }
+  .shirt-section__main-container {
+    display: flex;
+    flex-direction: row; }
+  .shirt-section__main-container {
+    width: 100%;
+    max-width: 360px; }
+  .shirt-section h2 {
+    display: none; }
+  .shirt-section__navigation {
+    width: 100%; }
+  .shirt-section__navigation-list {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin-bottom: 18px; }
+  .shirt-section__additional-list {
+    margin-bottom: 15px; }
+  .shirt-section__price-container {
+    margin-bottom: 16px; }
+  .shirt-section__advantages-container {
+    position: relative;
+    margin-bottom: 0;
+    padding: 12px 0; }
+    .shirt-section__advantages-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      right: -100vw;
+      display: block;
+      height: 100%;
+      background-color: #f4f4f4;
+      z-index: -1; }
+  .shirt-section__buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    order: 1; }
+  .shirt-section__button-link {
+    width: 100%;
+    margin-bottom: 15px; }
+    .shirt-section__button-link--shop {
+      margin: 0;
+      margin-bottom: 15px; }
+    .shirt-section__button-link--favorite {
+      width: 240px; }
+  .shirt-section__ancor-link {
+    display: block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    background-image: url("../img/icon-form.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .shirt-section__social-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    flex-wrap: wrap; }
+    .shirt-section__social-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      right: -100vw;
+      display: block;
+      height: 100%;
+      border-bottom: 2px solid #f4f4f4;
+      z-index: -1; }
+    .shirt-section__social-container--active .shirt-section__social-list {
+      display: flex;
+      margin-top: 15px; }
+    .shirt-section__social-container--active .shirt-section__social-heading::before {
+      transform: translateY(-50%) rotate(180deg); }
+  .shirt-section__social-list {
+    display: none; }
+  .shirt-section__social-heading {
+    position: relative;
+    display: block;
+    padding-top: 14px;
+    margin: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.25s ease all; }
+    .shirt-section__social-heading::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      right: -100vw;
+      display: block;
+      height: 100%;
+      border-top: 2px solid #f4f4f4;
+      transition: 0.25s ease all;
+      z-index: -1; }
+    .shirt-section__social-heading::before {
+      content: "";
+      position: absolute;
+      right: 8px;
+      top: 70%;
+      display: block;
+      width: 11px;
+      height: 7px;
+      background-image: url("../img/icon-arrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-50%);
+      transition: 0.25s ease all; }
+  .shirt-section__description {
+    max-width: 320px;
+    font-size: 12px; }
+    .shirt-section__description:first-of-type {
+      margin-top: 18px; }
+    .shirt-section__description:last-of-type {
+      margin-bottom: 10px; } }
+
 /* ----------------- Разметкdа под desktop ----------------- */
 .slider-section {
   position: relative;
   display: flex;
   flex-shrink: 0;
-  padding-right: 8.9%; }
+  padding-right: 5.5%; }
 
 .slider-section__slides {
   display: flex;
@@ -338,14 +518,16 @@ img {
   .slider-section__slide--showing {
     padding: 0;
     border: 2px solid #4873b9; }
+  .slider-section__slide:hover, .slider-section__slide:focus {
+    box-shadow: 0 0 5px #4873b9; }
 
 .shirt-section__main-image {
   display: block; }
 
 .slider-section__buttons {
   position: absolute;
-  bottom: 0;
-  left: 4.5%;
+  bottom: -20px;
+  left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -359,6 +541,8 @@ img {
 @media (max-width: 1439px) {
   .slider-section {
     padding-right: 5.5vw; }
+  .slider-section__buttons {
+    left: 5.5%; }
   .slider-section__slides {
     margin-right: 3vw; } }
 
@@ -368,4 +552,31 @@ img {
     width: 59%;
     padding-right: 43px; }
   .slider-section__slides {
-    margin-right: 5px; } }
+    margin-right: 5px; }
+  .slider-section__buttons {
+    position: absolute;
+    left: 6.5%; } }
+
+/* ----------------- Разметкdа под mobile ----------------- */
+@media (max-width: 767px) {
+  .slider-section {
+    justify-content: center;
+    width: 100%;
+    padding: 0; }
+  .slider-section picture {
+    text-align: center; }
+  .slider-section__main-image {
+    width: 82%; }
+  .slider-section__slides {
+    display: none; }
+  .slider-section__buttons {
+    display: none; } }
+
+.link {
+  color: #4873b9;
+  transition: 0.25s ease all; }
+  .link:hover, .link:focus {
+    color: #006be5;
+    font-weight: bold; }
+  .link:active {
+    opacity: 0.7; }

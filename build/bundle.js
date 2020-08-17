@@ -131,6 +131,32 @@ var slider = function slider() {
 
 /***/ }),
 
+/***/ "./source/js/components/social.js":
+/*!****************************************!*\
+  !*** ./source/js/components/social.js ***!
+  \****************************************/
+/*! exports provided: social */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "social", function() { return social; });
+var social = function social() {
+  var socialContainer = document.querySelector(".shirt-section__social-container");
+  socialContainer.classList.remove("shirt-section__social-container--active");
+  socialContainer.addEventListener("click", function (evt) {
+    if (evt.target.tagName === "H3") {
+      if (evt.target.parentNode.classList.contains("shirt-section__social-container--active")) {
+        evt.target.parentNode.classList.remove("shirt-section__social-container--active");
+      } else {
+        evt.target.parentNode.classList.add("shirt-section__social-container--active");
+      }
+    }
+  });
+};
+
+/***/ }),
+
 /***/ "./source/js/index.js":
 /*!****************************!*\
   !*** ./source/js/index.js ***!
@@ -141,8 +167,11 @@ var slider = function slider() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_slider_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider.js */ "./source/js/components/slider.js");
+/* harmony import */ var _components_social_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/social.js */ "./source/js/components/social.js");
+
 
 Object(_components_slider_js__WEBPACK_IMPORTED_MODULE_0__["slider"])();
+Object(_components_social_js__WEBPACK_IMPORTED_MODULE_1__["social"])();
 
 /***/ })
 

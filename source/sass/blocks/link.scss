@@ -1,0 +1,15 @@
+.link {
+  color: $offer-color;
+
+  transition: 0.25s ease all;
+
+  &:hover,
+  &:focus {
+    color: $button-color;
+    font-weight: bold;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

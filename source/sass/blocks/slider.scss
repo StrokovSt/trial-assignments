@@ -32,6 +32,11 @@
     padding: 0;
     border: 2px solid $offer-color;
   }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px $offer-color;
+  }
 }
 
 .shirt-section__main-image {
@@ -49,10 +54,45 @@
 }
 
 .slider-section__controls {
+  position: relative;
+
   width: 30px;
   height: 40px;
 
   transform: rotate(90deg);
+  background-color: transparent;
+  border: 2px solid $context-color;
+  outline: none;
+  transition: 0.25s ease all;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 22%;
+    left: 10%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../img/icon-button-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transform: rotate(270deg);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 5px $offer-color;
+  }
+
+  &:active {
+    border: 2px solid $button-color;
+  }
 }
 
 /* ----------------- Разметкdа под big-tablet ----------------- */
@@ -86,5 +126,31 @@
   .slider-section__buttons {
     position: absolute;
     left: 6.5%;
+  }
+}
+
+/* ----------------- Разметкdа под mobile ----------------- */
+
+@media (max-width: $tablet-width) {
+  .slider-section {
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .slider-section picture {
+    text-align: center;
+  }
+
+  .slider-section__main-image {
+    width: 82%;
+  }
+
+  .slider-section__slides {
+    display: none;
+  }
+
+  .slider-section__buttons {
+    display: none;
   }
 }

@@ -6,3 +6,15 @@
   align-items: flex-start;
   padding-top: 22px;
 }
+
+/* ----------------- Разметкdа под mobile ----------------- */
+
+@media (max-width: $tablet-width) {
+  .page-main {
+    padding-top: 0;
+    flex-wrap: wrap;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+}
